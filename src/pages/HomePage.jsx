@@ -137,15 +137,18 @@
         <div>
             <h1 className='headline'>My Task Manager</h1>
         <Paragraph
+        
     ellipsis={{ rows: 3, expandable: true, symbol: 'more' }}
     style={{
+        
         backgroundColor: '#f0f2f5',
         padding: '15px',
         borderRadius: '8px',
         fontSize: '16px',
         color: '#333',
         boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        textAlign: 'center'
     }}
     >
     {joke}
