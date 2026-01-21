@@ -11,7 +11,7 @@
         const [tasks, SetTasks] = useState([]);
         const [task, SetTask] = useState("");
         const [isChange, SetIsChange] = useState(true);
-        const [joke, setJoke] = useState();
+        const [joke, setJoke] = useState("Loading...");
 
         useEffect(()=>{
         fetchRandomJokes();
