@@ -1,0 +1,14 @@
+.card{
+    margin: 5px;
+       
+}
+.button{
+    margin: 5px;
+}
+.headline{
+    display: flex;
+    justify-content: center;
+}
+.task-list{
+    margin-bottom: 10px;
+}
