@@ -1,14 +1,54 @@
-.card{
-    margin: 5px;
-       
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
 }
-.button{
-    margin: 5px;
+
+
+.card {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.headline{
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+
+.button {
+    margin: 5px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5; 
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #4338ca;
+}
+
+
+.headline {
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
+    color: #1f2937;
+    font-size: 22px;
+    font-weight: bold;
 }
-.task-list{
-    margin-bottom: 10px;
+
+
+.task-list {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-left: 4px solid #4f46e5;
+    background-color: #eef2ff;
+    border-radius: 6px;
 }

@@ -136,23 +136,23 @@
     return (
         <div>
             <h1 className='headline'>My Task Manager</h1>
-        <Paragraph
-        
-    ellipsis={{ rows: 3, expandable: true, symbol: 'more' }}
-    style={{
-        
-        backgroundColor: '#f0f2f5',
-        padding: '15px',
-        borderRadius: '8px',
-        fontSize: '16px',
-        color: '#333',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-        marginBottom: '20px',
-        textAlign: 'center'
-    }}
-    >
-    {joke}
-    </Paragraph>
+            <Paragraph
+                ellipsis={{ rows: 3, expandable: true, symbol: 'Read more' }}
+                style={{
+                    background: 'linear-gradient(135deg, #eef2ff, #f8fafc)',
+                    padding: '18px',
+                    borderRadius: '12px',
+                    fontSize: '16px',
+                    color: '#1f2937',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+                    marginBottom: '20px',
+                    textAlign: 'center',
+                    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                }}
+            >
+                {joke}
+            </Paragraph>
+
 
             <Card className='card'>
                 <Progress
@@ -191,15 +191,21 @@
                                 ]}
                             >
                                 
-                            <span
-                                style={{
-                                    marginLeft: 10,
-                                    textDecoration: item.completed ? 'line-through' : 'none',
-                                    color: item.completed ? 'gray' : 'black'
-                                    }}
+                         <span
+                            style={{
+                                marginLeft: 10,
+                                padding: '4px 8px',
+                                borderRadius: '6px',
+                                fontSize: '15px',
+                                textDecoration: item.completed ? 'line-through' : 'none',
+                                color: item.completed ? '#6b7280' : '#111827',
+                                backgroundColor: item.completed ? '#f3f4f6' : '#ecfeff',
+                                transition: 'all 0.2s ease',
+                            }}
                             >
-                                    {item.text}
-                            </span>
+                            {item.text}
+                        </span>
+
                         </List.Item>
 
                     )
